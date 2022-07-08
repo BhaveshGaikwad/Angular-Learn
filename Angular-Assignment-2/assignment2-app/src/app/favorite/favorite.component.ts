@@ -12,4 +12,11 @@ export class FavoriteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public startRate =["no-star", "half-star", "full-star"];
+  public currentStar = this.startRate[0];
+
+  clicked(){
+    let index =this.startRate.indexOf(this.currentStar);
+    this.currentStar = this.startRate[++index>this.startRate.length-1 ? 0 : index];
+  }
 }
