@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TitleCasingComponent } from './title-casing/title-casing.component';
+import { CustomTitlePipePipe } from './custom-pipes/custom-title-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleCasingComponent
+    TitleCasingComponent,
+    CustomTitlePipePipe
   ],
   imports: [
     BrowserModule,
