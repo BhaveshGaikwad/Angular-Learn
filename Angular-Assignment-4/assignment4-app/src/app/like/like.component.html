@@ -1,2 +1,4 @@
-<p>Like Status: {{getLikeStatus()}}</p>
-<p>Like Count {{getLikesCount()}}</p>
+<div>
+    <i [ngStyle]="{color: getLikeStatus()? 'pink':'grey'}" class="bi bi-heart-fill"></i>
+    {{getLikesCount()}}
+</div>
