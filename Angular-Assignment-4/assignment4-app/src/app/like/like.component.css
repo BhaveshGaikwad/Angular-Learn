@@ -1,3 +1,13 @@
 .big {
     zoom: 400%;
 }
+
+.bi{
+    color: #ccc;
+    cursor: pointer;
+
+}
+
+.highLighted{
+    color: deeppink;
+}
