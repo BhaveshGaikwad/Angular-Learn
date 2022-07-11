@@ -1,4 +1,6 @@
-<div>
-    <i [ngStyle]="{color: getLikeStatus()? 'pink':'grey'}" class="bi bi-heart-fill"></i>
+<div class="big">
+    <i [ngStyle]="{color: getLikeStatus()? 'pink':'grey'}" class="bi bi-heart-fill"
+        (click) = "onClick()"
+    ></i>
     {{getLikesCount()}}
 </div>
