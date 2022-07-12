@@ -1,0 +1,12 @@
+<p>ng-if-directives works!</p>
+<div *ngIf="ngIfVariables==1; then template1 else template2">
+</div>
+
+
+<ng-template #template1>
+    <div> This is 1</div>
+</ng-template>
+
+<ng-template #template2>
+   <div> This is 2</div>
+</ng-template>
