@@ -1,0 +1,11 @@
+.outline{
+    border-style: solid;
+    border-width: thin  ;
+    border-color: grey;
+    padding: 5%;
+}
+
+.bi{
+    position: absolute;
+    right: 5%;
+}
