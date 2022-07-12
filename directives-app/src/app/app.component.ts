@@ -15,4 +15,15 @@ export class AppComponent {
   ngSwitchVariable={
     color : 'red'
   }
+
+  ngForVariable=[
+    'First-Element',
+    'Second-Element', 
+    'Third-Element', 
+    'Fourth-Element', 
+    'Fifth-Element', 
+    'Sixth-Element', 
+    'Seventh-Element'
+  ];
+
 }
