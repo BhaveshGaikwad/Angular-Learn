@@ -1,0 +1,11 @@
+<div>
+    <i (click)="clicked()" *ngIf="currentStar.includes('no-star')" class="bi bi-star"></i>
+    <i (click)="clicked()" *ngIf="currentStar.includes('half-star')" class="bi bi-star-half"></i>
+    <i (click)="clicked()" *ngIf="currentStar.includes('full-star')" class="bi bi-star-fill"></i>
+<div>   
+
+<div [ngSwitch]="currentStar">
+        <i (click)="clicked()" *ngSwitchCase="'no-star'" class="bi bi-star"></i>
+        <i (click)="clicked()" *ngSwitchCase="'half-star'" class="bi bi-star-half"></i>
+        <i (click)="clicked()" *ngSwitchCase="'full-star'" class="bi bi-star-fill"></i>
+<div>   
