@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NgIfDirectivesComponent } from './ng-if-directives/ng-if-directives.component';
 import { NgSwitchDirectivesComponent } from './ng-switch-directives/ng-switch-directives.component';
 import { NgForDirectivesComponent } from './ng-for-directives/ng-for-directives.component';
+import { InputFormatDirective } from './custom-directive/input-format.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgIfDirectivesComponent,
     NgSwitchDirectivesComponent,
-    NgForDirectivesComponent
+    NgForDirectivesComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule
