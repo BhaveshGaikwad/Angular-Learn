@@ -11,4 +11,8 @@ export class AppComponent {
   ngIfVariable={
     condition : 1
   }
+
+  ngSwitchVariable={
+    color : 'red'
+  }
 }
