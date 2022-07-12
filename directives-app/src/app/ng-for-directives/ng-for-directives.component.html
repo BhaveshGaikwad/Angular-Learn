@@ -1,0 +1,9 @@
+<p>ng-for-directives works!</p>
+<div *ngFor="let data of ngForVariable; index as i; even as Even; last as Last; first as First; odd as Odd; count as Count">
+    {{i}}: {{data}} , 
+    <span *ngIf="Even">(Even)</span> 
+    <span *ngIf="Odd">(Odd)</span> 
+    <span *ngIf="First">(First)  Total Count:{{Count}}</span> 
+    <span *ngIf="Last">(Last) Total Count:{{Count}} </span> 
+    
+</div>
