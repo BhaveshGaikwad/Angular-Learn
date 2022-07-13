@@ -1,29 +1,32 @@
 <form ngForm #formName="ngForm" (ngSubmit)="log(formName)">
     
     <div class="form-group">
-        <label name="name">Cource Name</label>
-        <input ngModel required type="text" #courseName="ngModel" name="name" id="name">
+        <label for="name" name="name">Cource Name</label>
+        <input ngModel required minlength="3" type="text" #courseName="ngModel" name="name" id="name" class="form-control">
         <div *ngIf="courseName.touched && courseName.invalid">
-            <div *ngIf="courseName.errors?.['required']">
+            <div *ngIf="courseName.errors?.['required']" class="alert alert-danger">
                 Name is required
+            </div>
+            <div *ngIf="courseName" class="alert alert-danger">
+                Minimum Length required is {{courseName.errors?.['minlength']?.['requiredLength']}}
             </div>
         </div>    
     </div>
 
     <div class="form-group">
-        <label name="category">Category</label>
-        <select required ngModel name="category" id="category" #category="ngModel">
+        <label for="category" name="category">Category</label>
+        <select required ngModel name="category" id="category" #category="ngModel" class="form-control">
             <option value=""></option>
             <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
         </select>
-        <div *ngIf="category.touched && category.invalid && category.errors?.['required']">
+        <div *ngIf="category.touched && category.invalid && category.errors?.['required']" class="alert alert-danger">
             Select one category.
         </div>
     </div>
 
     <div class="form-group">
         <input ngModel type="checkbox" name="hasGuarantee" id="">
-        <label name="hasGuarantee">30-day money back guarantee</label>
+        <label for="hasGuarantee" name="hasGuarantee">30-day money back guarantee</label>
     </div>
     
     <div>
