@@ -5,11 +5,30 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './course-form.component.html',
   styleUrls: ['./course-form.component.css']
 })
-export class CourseFormComponent implements OnInit {
+export class CourseFormComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public categories=[
+    {
+      "id":"1",
+      "name":"Developement",
+      "details":"dev",
+    },
+    {
+      "id":"2",
+      "name":"Art",
+      "details":"art",
+    },
+    {
+      "id":"1",
+      "name":"Language",
+      "details":"lang",
+    }
+  ]
 
+  log(a:any){
+    console.log("LOG: ",a);
+    
+  }
 }
