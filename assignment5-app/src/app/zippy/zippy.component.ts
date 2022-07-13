@@ -15,7 +15,7 @@ export class ZippyComponent implements OnInit {
   }
 
   @Input() title:any;
-  private openStatus:boolean;
+  public openStatus:boolean;
 
   onClick(){
     this.openStatus= !this.openStatus;

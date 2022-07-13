@@ -1,4 +1,9 @@
 <div class="outline">
-    {{title}}
-    <i class="bi bi-caret-down-fill" (click)="onClick()"></i>
+    <div class="header" [class.open]="openStatus">
+        {{title}}
+        <i class="bi bi-caret-down-fill" (click)="onClick()"></i>
+    </div>
+    <div class="body" *ngIf="openStatus">
+        <ng-content></ng-content>        
+    </div>
 </div>

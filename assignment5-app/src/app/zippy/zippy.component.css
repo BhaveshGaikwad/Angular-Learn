@@ -1,4 +1,17 @@
-.outline{
+.header{
+    border-style: solid;
+    border-width: thin  ;
+    border-color: grey;
+    padding: 5%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.open{
+    background: lightgrey;
+}
+
+.body{
     border-style: solid;
     border-width: thin  ;
     border-color: grey;
